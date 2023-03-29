@@ -6,18 +6,20 @@ This is an implementation of a basic decision tree algorithm, using the ID3 algo
 
 * DecisionTree class: This represents the decision tree itself. It has several methods for building and using the tree, including:
 
-** Most_Common_Label: A helper method that returns the most common class label in a list of labels.
+- Most_Common_Label: A helper method that returns the most common class label in a list of labels.
 
-** Entropy: A method that calculates the entropy of a set of labels.
+-Entropy: A method that calculates the entropy of a set of labels.
 
-** InformationGain: A method that calculates the information gain of a feature based on its ability to separate the labels.
+- InformationGain: A method that calculates the information gain of a feature based on its ability to separate the labels.
 
-** Choose_Best_Feature: A method that selects the best feature to split on based on its information gain.
+- Choose_Best_Feature: A method that selects the best feature to split on based on its information gain.
 
-** _build_tree: A recursive method that builds the decision tree by splitting the data based on the best feature at each node.
+- _build_tree: A recursive method that builds the decision tree by splitting the data based on the best feature at each node.
 
-** fit: A method that trains the decision tree on a dataset.
+- fit: A method that trains the decision tree on a dataset.
 
-** Classify: A recursive method that classifies a new data point by traversing the decision tree.
+- Classify: A recursive method that classifies a new data point by traversing the decision tree.
 
-** predict: A method that predicts the class labels for a set of data points.
+- predict: A method that predicts the class labels for a set of data points.
+
+Then Use this class to predict if the pateint has cardiovascular disease or not and compare the accuracies with the DT in sklearn.
